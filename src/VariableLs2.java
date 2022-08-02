@@ -1,6 +1,6 @@
-public class Ls2 {
+public class VariableLs2 {
     public static void main(String [] args){
-        //primitive variable types
+        //primitive data types
 
         //whole numbers
         short shortVariable = 32767;
