@@ -22,6 +22,6 @@ public class VariableLs2 {
 
         String result = "shortVariable + intVariable + longVariable";
 
-        System.out.println(shortVariable);
+        System.out.println(shortVariable + intVariable + longVariable + doubleVariable + floatVariable + byteVariable + " charVariable");
     }
 }
