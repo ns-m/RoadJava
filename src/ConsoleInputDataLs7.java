@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ConsoleInputDataLs6 {
+public class ConsoleInputDataLs7 {
     public static void main(String[] args) {
         String myString = "Next step..."; //packages java.lang class import in advance
         Scanner myInput = new Scanner(System.in); //packages java.util class import manually
