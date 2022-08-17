@@ -1,6 +1,6 @@
 package Interfaces;
 
-public class PersonLs26 {
+public class PersonLs26 implements InfoAbout {
 
     public String name;
 
@@ -8,7 +8,12 @@ public class PersonLs26 {
         this.name = name;
     }
 
-    public void sayHello(){
+    public void sayHello() {
         System.out.println("Salame");
+    }
+
+    @Override
+    public void showInfo() {
+        System.out.println("Name is - " + this.name);
     }
 }

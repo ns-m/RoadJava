@@ -9,5 +9,21 @@ public class MainLs26 {
 
         horse.sleep();
         adam.sayHello();
+        System.out.println("-------------");
+        horse.showInfo();
+        adam.showInfo();
+        System.out.println("-------------");
+        InfoAbout info1 = new MammalsLs26(200);
+        InfoAbout info2 = new PersonLs26("Eva");
+        info1.showInfo();
+        info2.showInfo();
+        System.out.println("-------------");
+        outputInfo(horse);
+        outputInfo(adam);
+
+    }
+
+    public static void outputInfo(InfoAbout infoAbout){
+        infoAbout.showInfo();
     }
 }
