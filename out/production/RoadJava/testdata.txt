@@ -1,0 +1,7 @@
+first line
+second line
+third line
+100
+200
+23.5
+true
