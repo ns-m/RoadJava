@@ -10,6 +10,6 @@ public class AbstractClassesLs41 {
         cedar.fruit();
 
         oak.growUp();
-        cedar.growUp();
+        //cedar.growUp();
     }
 }
