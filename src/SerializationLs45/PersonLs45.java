@@ -1,6 +1,8 @@
 package SerializationLs45;
 
-public class PersonLs45 {
+import java.io.Serializable;
+
+public class PersonLs45 implements Serializable {
 
     private int id;
     private String name;

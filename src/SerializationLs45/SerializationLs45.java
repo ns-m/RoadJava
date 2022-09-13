@@ -15,6 +15,11 @@ public class SerializationLs45 {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream("people.bin");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+
+            objectOutputStream.writeObject(adam);
+            objectOutputStream.writeObject(eva);
+
+            objectOutputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
