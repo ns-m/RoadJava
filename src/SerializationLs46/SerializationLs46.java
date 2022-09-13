@@ -17,15 +17,25 @@ public class SerializationLs46 {
                 new PersonLs46(300, "Jesus")
         };
 
+        PersonLs46[] otherPeople = {
+                new PersonLs46(400, "Bob"),
+                new PersonLs46(500, "Joe"),
+                new PersonLs46(600, "Lee")
+        };
+
         try {
             FileOutputStream fileOutputStream = new FileOutputStream("peopleArr.bin");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
+            //option 1
             objectOutputStream.writeInt(people.length);
             for (PersonLs46 person: people
                  ) {
                 objectOutputStream.writeObject(person);
             }
+
+            //option 2
+            objectOutputStream.writeObject(otherPeople);
 
             objectOutputStream.close();
         } catch (IOException e) {

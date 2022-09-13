@@ -10,7 +10,7 @@ public class ReadObjectLs46 {
     public static void main(String[] args) {
 
         try {
-            FileInputStream fileInputStream = new FileInputStream("people.bin");
+            FileInputStream fileInputStream = new FileInputStream("peopleArr.bin");
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
             int peopleCount = objectInputStream.readInt();
@@ -21,6 +21,12 @@ public class ReadObjectLs46 {
             }
 
             System.out.println(Arrays.toString(people));
+
+            System.out.println("----------");
+
+            PersonLs46[] otherPeople = (PersonLs46[]) objectInputStream.readObject();
+
+            System.out.println(Arrays.toString(otherPeople));
 
             objectInputStream.close();
         } catch (IOException | ClassNotFoundException e) {
