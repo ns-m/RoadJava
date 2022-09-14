@@ -23,9 +23,7 @@ public class SerializationLs47 {
                 new PersonLs47(600, "Lee")
         };
 
-        try {
-            FileOutputStream fileOutputStream = new FileOutputStream("peopleArr.bin");
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("peopleArr.bin"))) {
 
             //option 1
             objectOutputStream.writeInt(people.length);
@@ -37,7 +35,8 @@ public class SerializationLs47 {
             //option 2
             objectOutputStream.writeObject(otherPeople);
 
-            objectOutputStream.close();
+            //automatic close
+            //objectOutputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
