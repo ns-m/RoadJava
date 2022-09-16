@@ -29,5 +29,13 @@ public class TestLs48 {
 
         SeasonLs48 seasonLs48 = SeasonLs48.SPRING;
         System.out.println(seasonLs48.getTemp());
+
+        System.out.println(seasonLs48.name());
+        System.out.println(animal.name());
+
+        AnimalLs48 cow = AnimalLs48.valueOf("COW");
+        System.out.println(cow.getTranslation());
+
+        System.out.println(seasonLs48.ordinal());
     }
 }
