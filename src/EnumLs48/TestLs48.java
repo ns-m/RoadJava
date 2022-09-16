@@ -8,7 +8,7 @@ public class TestLs48 {
 
     public static void main(String[] args) {
 
-        AnimalLs48 animal = AnimalLs48.COW;
+        AnimalLs48 animal = AnimalLs48.DOG;
 
         switch (animal){
             case CAT:
@@ -25,5 +25,9 @@ public class TestLs48 {
         }
 
         System.out.println(animal.getTranslation());
+        System.out.println(animal);
+
+        SeasonLs48 seasonLs48 = SeasonLs48.SPRING;
+        System.out.println(seasonLs48.getTemp());
     }
 }

@@ -12,4 +12,8 @@ public enum AnimalLs48 {
     public String getTranslation() {
         return translation;
     }
+
+    public String toString(){
+        return "Türkçe çeviri - " + translation;
+    }
 }
